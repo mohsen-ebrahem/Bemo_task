@@ -20,14 +20,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/create-customer',[CustomerController::class,'store']);
+// Route::post('/create-customer',[CustomerController::class,'store']);
 
-Route::post('/create-loan',[LoanController::class,'store']);
+// Route::post('/create-loan',[LoanController::class,'store']);
 
-Route::get('/read-financial-info/{loanId}',[CustomerController::class,'readFinancialInfo']);
+// Route::get('/read-financial-info/{loanId}',[CustomerController::class,'readFinancialInfo']);
 
-Route::get('/read-remained-payments/{loanId}',[LoanController::class,'readRemainedPayments']);
-Route::get('/read-paied-pays/{loanId}',[LoanController::class,'readPaidPayments']);
+// Route::get('/read-remained-payments/{loanId}',[LoanController::class,'readRemainedPayments']);
+// Route::get('/read-paied-pays/{loanId}',[LoanController::class,'readPaidPayments']);
 
 
-Route::get('/search-customer',[CustomerController::class,'searchForCustomer']);
+// Route::get('/search-customer',[CustomerController::class,'searchForCustomer']);
